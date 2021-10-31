@@ -1,0 +1,2650 @@
+{
+	"info": {
+		"_postman_id": "dc8bc94f-74f2-4ab9-8d02-69d6fda53243",
+		"name": "Aplication web servis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Administrator",
+			"item": [
+				{
+					"name": "Get all admins",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/administrator",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"administrator"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all administrators",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/administrator",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"administrator"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "155"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9b-0yyOegHYDzOYzRTeRSSYYNhFTnM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 01:37:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"administratorId\": 1,\n        \"username\": \"Thrax\",\n        \"passwordHash\": \"asdlkjh128796djk123d\"\n    },\n    {\n        \"administratorId\": 2,\n        \"username\": \"TestAdmin\",\n        \"passwordHash\": \"123123423423\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get 1 admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/administrator/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"administrator",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get 1 administrator",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/administrator/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"administrator",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e-kNX5HsZjzKgGo2xBZANXLdvpEE4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 01:39:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 1,\n    \"username\": \"Thrax\",\n    \"passwordHash\": \"asdlkjh128796djk123d\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get 1 nonexisting admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/administrator/600",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"administrator",
+								"600"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get 1 nonexisting admin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/administrator/600",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"administrator",
+										"600"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-TohoSz0THfgyH4V7rCdfcfXcq54\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 02:15:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1002,\n    \"message\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Add new admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"TestAdmin4\",\"password\":\"password4\"}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/administrator",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"administrator"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add new admin - success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"username\":\"TestAdmin2\",\"password\":\"mordesnumerouno\"}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/administrator",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"administrator"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "191"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bf-AUhwaNDK7YteFwAtvda8kFVED1I\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 01:43:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"TestAdmin2\",\n    \"passwordHash\": \"250CFF8535735F4CCE073E21540DFAEB9D931B2A244AC85C5DC18E5A9B3B9F043A510385EDB183BB2FAB4BC4DD98FA036DF65CAD507475D833958576F4CE1FC5\",\n    \"administratorId\": 3\n}"
+						},
+						{
+							"name": "Add new admin - duplicate username",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"username\":\"TestAdmin4\",\"password\":\"password4\"}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/administrator",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"administrator"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-t4k/9UI9MQaVcBQ68YkMUdFYBok\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 02:02:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1001,\n    \"message\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit existing admin",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"bestpaswordeune\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/administrator/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"administrator",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edint a nonexistent admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"sadpassword\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/administrator/600",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"administrator",
+								"600"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edint a nonexistent admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"password\": \"sadpassword\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/administrator/600",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"administrator",
+										"600"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-TohoSz0THfgyH4V7rCdfcfXcq54\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 02:10:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1002,\n    \"message\": null\n}"
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "7bbe7966-ab20-4f3c-bd57-9e48ce6c8df1",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1ac6110b-acdf-4d5b-91f7-1e8492bec157",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Article",
+			"item": [
+				{
+					"name": "create complete article",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Frizider \",\r\n    \"categoryId\": \"4\",\r\n    \"excerpt\": \"Frizider excerpt\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\r\n    \"price\":450,\r\n    \"manufacturer\": \"Gorenje\",\r\n    \"features\":\r\n    [\r\n       \r\n    ]\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/article/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"article",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create complete article",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Intel i5\",\r\n    \"categoryId\": \"3\",\r\n    \"excerpt\": \"Processor excerpt\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\r\n    \"price\":\"250\",\r\n    \"features\":\r\n    [\r\n        {\"featureId\": \"3\",\"value\": \"x86\"},\r\n        {\"featureId\": \"4\",\"value\": \"3.4Ghz\"}\r\n    ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/article/createComplete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"createComplete"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1026"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"402-c/s7ARq07f40YgUyE819fsyyRM0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 05:38:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"articleId\": 5,\n    \"name\": \"Intel i5\",\n    \"categoryId\": 3,\n    \"excerpt\": \"Processor excerpt\",\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\n    \"manufacturer\": \"\\\"\\\"\",\n    \"category\": {\n        \"categoryId\": 3,\n        \"name\": \"Procesori\",\n        \"imagePath\": \"/img1\",\n        \"parentCategoryId\": 1\n    },\n    \"articleFeatures\": [\n        {\n            \"artivleFeatureId\": 5,\n            \"articleId\": 5,\n            \"featureId\": 3,\n            \"value\": \"x86\"\n        },\n        {\n            \"artivleFeatureId\": 6,\n            \"articleId\": 5,\n            \"featureId\": 4,\n            \"value\": \"3.4Ghz\"\n        }\n    ],\n    \"features\": [\n        {\n            \"featureId\": 3,\n            \"name\": \"Arhitektura\",\n            \"categoryId\": 3\n        },\n        {\n            \"featureId\": 4,\n            \"name\": \"Clock speed\",\n            \"categoryId\": 3\n        }\n    ],\n    \"articlePrices\": [\n        {\n            \"articlePriceId\": 5,\n            \"articleId\": 5,\n            \"price\": \"250\",\n            \"createdAt\": \"2020-05-20T05:38:50.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "upload article photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/Thrax/Desktop/AMD-Ryzen-7-2700X-BOX.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/article/13/uploadPhoto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"article",
+								"13",
+								"uploadPhoto"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "upload article photo normal/small/thumb",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/Thrax/Desktop/AMD-Ryzen-7-2700X-BOX.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/article/1/uploadPhoto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"1",
+										"uploadPhoto"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "88"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"58-0I4nND+H0lIKKnbq1VcXrpCzzxQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 11:39:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"articleId\": \"1\",\n    \"imagePath\": \"2020520-5921431188-amd-ryzen-7-2700x-box.jpg\",\n    \"photoId\": 9\n}"
+						},
+						{
+							"name": "upload article photo exe.png file",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "photo",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/article/1/uploadPhoto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"1",
+										"uploadPhoto"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41-dBYaUit6GM7B0YShGd9yx34apUM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 11:14:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": 4002,\n    \"message\": \"bad content type\"\n}"
+						},
+						{
+							"name": "upload article photo bad file extension",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/Thrax/AppData/Roaming/uTorrent/uTorrent.exe"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/article/1/uploadPhoto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"1",
+										"uploadPhoto"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-J5yyAxvG5RUPse3WRiG0bAm/ZXE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 10:52:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": 4002,\n    \"message\": \"Bad file extension\"\n}"
+						},
+						{
+							"name": "upload article photo success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/Thrax/Desktop/AMD-Ryzen-7-2700X-BOX.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/article/1/uploadPhoto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"1",
+										"uploadPhoto"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "88"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"58-S3Q6V2DfYZdf4gO6GT3p8kk07Ew\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 10:03:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"articleId\": \"1\",\n    \"imagePath\": \"2020520-7139343157-AMD-Ryzen-7-2700X-BOX.jpg\",\n    \"photoId\": 5\n}"
+						}
+					]
+				},
+				{
+					"name": "get 1 article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/article/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"article",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get 1 article",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/article/1/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1493"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5d5-1wwExsu9KWzACyR1HX4NcrOdLmg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 10:06:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"articleId\": 1,\n    \"name\": \"AMD Ryzen 2700x\",\n    \"categoryId\": 3,\n    \"excerpt\": \"Very good processor\",\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, nibh id viverra mattis, justo arcu sagittis est, in tincidunt enim nulla et magna. Nunc sollicitudin, nisl quis commodo porta, eros libero commodo leo, quis scelerisque erat augue convallis enim. Aenean nisi tortor, blandit eu iaculis ac, aliquet id nunc. Vestibulum consectetur massa at aliquam molestie. Vivamus fermentum risus ligula, non mattis leo mollis volutpat. Phasellus interdum erat id arcu iaculis, in placerat augue finibus. Donec a diam lectus. In eu pellentesque orci. Aenean eu quam id arcu convallis accumsan interdum ut nibh. Curabitur sagittis dictum ex, nec gravida ex egestas at.\",\n    \"manufacturer\": \"AMD\",\n    \"articleFeatures\": [\n        {\n            \"artivleFeatureId\": 1,\n            \"articleId\": 1,\n            \"featureId\": 3,\n            \"value\": \"x86\"\n        },\n        {\n            \"artivleFeatureId\": 2,\n            \"articleId\": 1,\n            \"featureId\": 4,\n            \"value\": \"4Ghz\"\n        }\n    ],\n    \"articlePrices\": [\n        {\n            \"articlePriceId\": 1,\n            \"articleId\": 1,\n            \"price\": \"400\",\n            \"createdAt\": \"2020-05-20T03:15:25.000Z\"\n        },\n        {\n            \"articlePriceId\": 2,\n            \"articleId\": 1,\n            \"price\": \"380\",\n            \"createdAt\": \"2020-05-20T03:59:01.000Z\"\n        }\n    ],\n    \"photos\": [\n        {\n            \"photoId\": 1,\n            \"articleId\": 1,\n            \"imagePath\": \"/img4\"\n        },\n        {\n            \"photoId\": 7,\n            \"articleId\": 1,\n            \"imagePath\": \"2020520-5346484146-amd-ryzen-7-2700x-box.jpg\"\n        }\n    ],\n    \"category\": {\n        \"categoryId\": 3,\n        \"name\": \"Procesori\",\n        \"imagePath\": \"/img1\",\n        \"parentCategoryId\": 1\n    },\n    \"features\": [\n        {\n            \"featureId\": 3,\n            \"name\": \"Arhitektura\",\n            \"categoryId\": 3\n        },\n        {\n            \"featureId\": 4,\n            \"name\": \"Clock speed\",\n            \"categoryId\": 3\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get all articles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/article/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"article",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all articles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/article/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4710"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1266-RvjABRdgUh4OmMBv4ohNQv5oUAo\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2020 09:16:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"articleId\": 1,\n        \"name\": \"AMD Ryzen 2700x\",\n        \"categoryId\": 3,\n        \"excerpt\": \"Very good processor\",\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, nibh id viverra mattis, justo arcu sagittis est, in tincidunt enim nulla et magna. Nunc sollicitudin, nisl quis commodo porta, eros libero commodo leo, quis scelerisque erat augue convallis enim. Aenean nisi tortor, blandit eu iaculis ac, aliquet id nunc. Vestibulum consectetur massa at aliquam molestie. Vivamus fermentum risus ligula, non mattis leo mollis volutpat. Phasellus interdum erat id arcu iaculis, in placerat augue finibus. Donec a diam lectus. In eu pellentesque orci. Aenean eu quam id arcu convallis accumsan interdum ut nibh. Curabitur sagittis dictum ex, nec gravida ex egestas at.\",\n        \"manufacturer\": \"AMD\",\n        \"articleFeatures\": [\n            {\n                \"artivleFeatureId\": 1,\n                \"articleId\": 1,\n                \"featureId\": 3,\n                \"value\": \"x86\"\n            },\n            {\n                \"artivleFeatureId\": 2,\n                \"articleId\": 1,\n                \"featureId\": 4,\n                \"value\": \"4Ghz\"\n            }\n        ],\n        \"articlePrices\": [\n            {\n                \"articlePriceId\": 1,\n                \"articleId\": 1,\n                \"price\": \"400.00\",\n                \"createdAt\": \"2020-05-20T03:15:25.000Z\"\n            },\n            {\n                \"articlePriceId\": 2,\n                \"articleId\": 1,\n                \"price\": \"380.00\",\n                \"createdAt\": \"2020-05-20T03:59:01.000Z\"\n            }\n        ],\n        \"photos\": [\n            {\n                \"photoId\": 11,\n                \"articleId\": 1,\n                \"imagePath\": \"2020520-4377511355-amd-ryzen-7-2700x-box.jpg\"\n            },\n            {\n                \"photoId\": 13,\n                \"articleId\": 1,\n                \"imagePath\": \"2020520-6331126454-amd-ryzen-7-2700x-box.jpg\"\n            }\n        ],\n        \"category\": {\n            \"categoryId\": 3,\n            \"name\": \"Procesori\",\n            \"imagePath\": \"2020622-9020415786-amd-ryzen-7-2700x-box.jpg\",\n            \"parentCategoryId\": 1\n        },\n        \"features\": [\n            {\n                \"featureId\": 3,\n                \"name\": \"Arhitektura\",\n                \"categoryId\": 3\n            },\n            {\n                \"featureId\": 4,\n                \"name\": \"Clock speed\",\n                \"categoryId\": 3\n            }\n        ]\n    },\n    {\n        \"articleId\": 5,\n        \"name\": \"Intel i5\",\n        \"categoryId\": 3,\n        \"excerpt\": \"Processor excerpt\",\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\n        \"manufacturer\": \"\\\"\\\"\",\n        \"articleFeatures\": [\n            {\n                \"artivleFeatureId\": 5,\n                \"articleId\": 5,\n                \"featureId\": 3,\n                \"value\": \"x86\"\n            },\n            {\n                \"artivleFeatureId\": 6,\n                \"articleId\": 5,\n                \"featureId\": 4,\n                \"value\": \"3.4Ghz\"\n            }\n        ],\n        \"articlePrices\": [\n            {\n                \"articlePriceId\": 5,\n                \"articleId\": 5,\n                \"price\": \"250.00\",\n                \"createdAt\": \"2020-05-20T05:38:50.000Z\"\n            }\n        ],\n        \"photos\": [],\n        \"category\": {\n            \"categoryId\": 3,\n            \"name\": \"Procesori\",\n            \"imagePath\": \"2020622-9020415786-amd-ryzen-7-2700x-box.jpg\",\n            \"parentCategoryId\": 1\n        },\n        \"features\": [\n            {\n                \"featureId\": 3,\n                \"name\": \"Arhitektura\",\n                \"categoryId\": 3\n            },\n            {\n                \"featureId\": 4,\n                \"name\": \"Clock speed\",\n                \"categoryId\": 3\n            }\n        ]\n    },\n    {\n        \"articleId\": 6,\n        \"name\": \"Intel i7\",\n        \"categoryId\": 3,\n        \"excerpt\": \"Processor excerpt2\",\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\n        \"manufacturer\": \"\\\"\\\"\",\n        \"articleFeatures\": [\n            {\n                \"artivleFeatureId\": 7,\n                \"articleId\": 6,\n                \"featureId\": 3,\n                \"value\": \"x86\"\n            },\n            {\n                \"artivleFeatureId\": 8,\n                \"articleId\": 6,\n                \"featureId\": 4,\n                \"value\": \"3.7Ghz\"\n            }\n        ],\n        \"articlePrices\": [\n            {\n                \"articlePriceId\": 6,\n                \"articleId\": 6,\n                \"price\": \"350.00\",\n                \"createdAt\": \"2020-05-20T05:45:57.000Z\"\n            }\n        ],\n        \"photos\": [],\n        \"category\": {\n            \"categoryId\": 3,\n            \"name\": \"Procesori\",\n            \"imagePath\": \"2020622-9020415786-amd-ryzen-7-2700x-box.jpg\",\n            \"parentCategoryId\": 1\n        },\n        \"features\": [\n            {\n                \"featureId\": 3,\n                \"name\": \"Arhitektura\",\n                \"categoryId\": 3\n            },\n            {\n                \"featureId\": 4,\n                \"name\": \"Clock speed\",\n                \"categoryId\": 3\n            }\n        ]\n    },\n    {\n        \"articleId\": 8,\n        \"name\": \"Intel i51\",\n        \"categoryId\": 3,\n        \"excerpt\": \"New processor excerpt\",\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\n        \"manufacturer\": \"Intel\",\n        \"articleFeatures\": [\n            {\n                \"artivleFeatureId\": 13,\n                \"articleId\": 8,\n                \"featureId\": 3,\n                \"value\": \"x86\"\n            },\n            {\n                \"artivleFeatureId\": 14,\n                \"articleId\": 8,\n                \"featureId\": 4,\n                \"value\": \"2.5Ghz\"\n            }\n        ],\n        \"articlePrices\": [\n            {\n                \"articlePriceId\": 7,\n                \"articleId\": 8,\n                \"price\": \"350.00\",\n                \"createdAt\": \"2020-06-22T00:13:54.000Z\"\n            },\n            {\n                \"articlePriceId\": 8,\n                \"articleId\": 8,\n                \"price\": \"450.00\",\n                \"createdAt\": \"2020-06-22T00:48:26.000Z\"\n            }\n        ],\n        \"photos\": [],\n        \"category\": {\n            \"categoryId\": 3,\n            \"name\": \"Procesori\",\n            \"imagePath\": \"2020622-9020415786-amd-ryzen-7-2700x-box.jpg\",\n            \"parentCategoryId\": 1\n        },\n        \"features\": [\n            {\n                \"featureId\": 3,\n                \"name\": \"Arhitektura\",\n                \"categoryId\": 3\n            },\n            {\n                \"featureId\": 4,\n                \"name\": \"Clock speed\",\n                \"categoryId\": 3\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Delete photo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/article/1/deletePhoto/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"article",
+								"1",
+								"deletePhoto",
+								"12"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete photo",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/article/1/deletePhoto/12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"1",
+										"deletePhoto",
+										"12"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-E3plsTplRpQDjviO9Y5JWxGnv9o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Jun 2020 23:55:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"ok\",\n    \"statusCode\": 0,\n    \"message\": \"photo removed\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit one article without features",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Intel i53\",\r\n    \"categoryId\": \"3\",\r\n    \"excerpt\": \"New processor excerpt\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\r\n    \"price\": 450,\r\n    \"manufacturer\": \"Intel\",\r\n    \"features\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/article/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"article",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit one article without features",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Intel i52\",\r\n    \"categoryId\": \"3\",\r\n    \"excerpt\": \"New processor excerpt\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\r\n    \"price\": \"450\",\r\n    \"manufacturer\": \"Intel\",\r\n    \"features\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/article/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "671"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29f-dOvGpLV2dIJpLkIc3/Xy9fLsg7U\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2020 00:50:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"articleId\": 8,\n    \"name\": \"Intel i52\",\n    \"categoryId\": 3,\n    \"excerpt\": \"New processor excerpt\",\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\n    \"manufacturer\": \"Intel\",\n    \"category\": {\n        \"categoryId\": 3,\n        \"name\": \"Procesori\",\n        \"imagePath\": \"/img1\",\n        \"parentCategoryId\": 1\n    },\n    \"articleFeatures\": [],\n    \"features\": [],\n    \"articlePrices\": [\n        {\n            \"articlePriceId\": 7,\n            \"articleId\": 8,\n            \"price\": \"350\",\n            \"createdAt\": \"2020-06-22T00:13:54.000Z\"\n        },\n        {\n            \"articlePriceId\": 8,\n            \"articleId\": 8,\n            \"price\": \"450\",\n            \"createdAt\": \"2020-06-22T00:48:26.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit one article with features",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Intel i51\",\r\n    \"excerpt\": \"New processor excerptt\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\r\n    \"price\": 450.00,\r\n    \"manufacturer\": \"Intel\",\r\n    \"features\": [\r\n        {\r\n            \"featureId\": \"3\",\r\n            \"value\": \"x86\"\r\n        },\r\n        {\r\n            \"featureId\": \"4\",\r\n            \"value\": \"2.5Ghz\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/article/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"article",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit one article with features",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Intel i51\",\r\n    \"excerpt\": \"New processor excerptt\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\r\n    \"price\": 450.00,\r\n    \"manufacturer\": \"Intel\",\r\n    \"features\": [\r\n        {\r\n            \"featureId\": \"3\",\r\n            \"value\": \"x86\"\r\n        },\r\n        {\r\n            \"featureId\": \"4\",\r\n            \"value\": \"2.5Ghz\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/article/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "954"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3ba-I8tQycudPGubUrjOMYyINPz5CXI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jul 2020 15:58:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"articleId\": 8,\n    \"name\": \"Intel i51\",\n    \"categoryId\": 3,\n    \"excerpt\": \"New processor excerptt\",\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\n    \"manufacturer\": \"Intel\",\n    \"category\": {\n        \"categoryId\": 3,\n        \"name\": \"Procesori\",\n        \"imagePath\": \"2020622-9020415786-amd-ryzen-7-2700x-box.jpg\",\n        \"parentCategoryId\": 1\n    },\n    \"articleFeatures\": [\n        {\n            \"artivleFeatureId\": 19,\n            \"articleId\": 8,\n            \"featureId\": 3,\n            \"value\": \"x86\"\n        },\n        {\n            \"artivleFeatureId\": 20,\n            \"articleId\": 8,\n            \"featureId\": 4,\n            \"value\": \"2.5Ghz\"\n        }\n    ],\n    \"features\": [\n        {\n            \"featureId\": 3,\n            \"name\": \"Arhitektura\",\n            \"categoryId\": 3\n        },\n        {\n            \"featureId\": 4,\n            \"name\": \"Clock speed\",\n            \"categoryId\": 3\n        }\n    ],\n    \"articlePrices\": [\n        {\n            \"articlePriceId\": 7,\n            \"articleId\": 8,\n            \"price\": \"350.00\",\n            \"createdAt\": \"2020-06-22T00:13:54.000Z\"\n        },\n        {\n            \"articlePriceId\": 8,\n            \"articleId\": 8,\n            \"price\": \"450.00\",\n            \"createdAt\": \"2020-06-22T00:48:26.000Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Edit one article with features",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Intel i51\",\r\n    \"categoryId\": \"3\",\r\n    \"excerpt\": \"New processor excerpt\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\r\n    \"price\": \"450\",\r\n    \"manufacturer\": \"Intel\",\r\n    \"features\": [\r\n        {\r\n            \"featureId\": \"3\",\r\n            \"value\": \"x86\"\r\n        },\r\n        {\r\n            \"featureId\": \"4\",\r\n            \"value\": \"2.5Ghz\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/article/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "908"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38c-FkeLA9iEfm3qbMRgSom4zmqo228\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2020 00:56:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"articleId\": 8,\n    \"name\": \"Intel i51\",\n    \"categoryId\": 3,\n    \"excerpt\": \"New processor excerpt\",\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\n    \"manufacturer\": \"Intel\",\n    \"category\": {\n        \"categoryId\": 3,\n        \"name\": \"Procesori\",\n        \"imagePath\": \"/img1\",\n        \"parentCategoryId\": 1\n    },\n    \"articleFeatures\": [\n        {\n            \"artivleFeatureId\": 13,\n            \"articleId\": 8,\n            \"featureId\": 3,\n            \"value\": \"x86\"\n        },\n        {\n            \"artivleFeatureId\": 14,\n            \"articleId\": 8,\n            \"featureId\": 4,\n            \"value\": \"2.5Ghz\"\n        }\n    ],\n    \"features\": [\n        {\n            \"featureId\": 3,\n            \"name\": \"Arhitektura\",\n            \"categoryId\": 3\n        },\n        {\n            \"featureId\": 4,\n            \"name\": \"Clock speed\",\n            \"categoryId\": 3\n        }\n    ],\n    \"articlePrices\": [\n        {\n            \"articlePriceId\": 7,\n            \"articleId\": 8,\n            \"price\": \"350\",\n            \"createdAt\": \"2020-06-22T00:13:54.000Z\"\n        },\n        {\n            \"articlePriceId\": 8,\n            \"articleId\": 8,\n            \"price\": \"450\",\n            \"createdAt\": \"2020-06-22T00:48:26.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Search articles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\": 3,\r\n    \"keywords\": \"Lorem\",\r\n    \"priceMin\": 1,\r\n    \"priceMax\": 450,\r\n    \"features\":\r\n    [{\r\n         \"featureId\": 3,\r\n         \"values\":  [\"x86\",\"x64\"] \r\n        },\r\n        {\r\n            \"featureId\": 4,\r\n            \"values\": [\"4Ghz\",\"2.5Ghz\"]\r\n    }],\r\n    \"orderBy\": \"price\",\r\n    \"orderDirection\": \"ASC\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/article/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"article",
+								"search"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search articles",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"categoryId\": 3,\r\n    \"keywords\": \"Lorem\",\r\n    \"priceMin\": 1,\r\n    \"priceMax\": 450,\r\n    \"features\":\r\n    [{\r\n         \"featureId\": 3,\r\n         \"values\":  [\"x86\",\"x64\"] \r\n        },\r\n        {\r\n            \"featureId\": 4,\r\n            \"values\": [\"4Ghz\",\"2.5Ghz\"]\r\n    }],\r\n    \"orderBy\": \"price\",\r\n    \"orderDirection\": \"ASC\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/article/search",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"article",
+										"search"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2547"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9f3-Eb0h1L2HPQLWg5rZ7W9SzBMgOCg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2020 10:50:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"articleId\": 1,\n        \"name\": \"AMD Ryzen 2700x\",\n        \"categoryId\": 3,\n        \"excerpt\": \"Very good processor\",\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, nibh id viverra mattis, justo arcu sagittis est, in tincidunt enim nulla et magna. Nunc sollicitudin, nisl quis commodo porta, eros libero commodo leo, quis scelerisque erat augue convallis enim. Aenean nisi tortor, blandit eu iaculis ac, aliquet id nunc. Vestibulum consectetur massa at aliquam molestie. Vivamus fermentum risus ligula, non mattis leo mollis volutpat. Phasellus interdum erat id arcu iaculis, in placerat augue finibus. Donec a diam lectus. In eu pellentesque orci. Aenean eu quam id arcu convallis accumsan interdum ut nibh. Curabitur sagittis dictum ex, nec gravida ex egestas at.\",\n        \"manufacturer\": \"AMD\",\n        \"category\": {\n            \"categoryId\": 3,\n            \"name\": \"Procesori\",\n            \"imagePath\": \"2020622-9020415786-amd-ryzen-7-2700x-box.jpg\",\n            \"parentCategoryId\": 1\n        },\n        \"articleFeatures\": [\n            {\n                \"artivleFeatureId\": 1,\n                \"articleId\": 1,\n                \"featureId\": 3,\n                \"value\": \"x86\"\n            },\n            {\n                \"artivleFeatureId\": 2,\n                \"articleId\": 1,\n                \"featureId\": 4,\n                \"value\": \"4Ghz\"\n            }\n        ],\n        \"features\": [\n            {\n                \"featureId\": 3,\n                \"name\": \"Arhitektura\",\n                \"categoryId\": 3\n            },\n            {\n                \"featureId\": 4,\n                \"name\": \"Clock speed\",\n                \"categoryId\": 3\n            }\n        ],\n        \"articlePrices\": [\n            {\n                \"articlePriceId\": 1,\n                \"articleId\": 1,\n                \"price\": \"400.00\",\n                \"createdAt\": \"2020-05-20T03:15:25.000Z\"\n            },\n            {\n                \"articlePriceId\": 2,\n                \"articleId\": 1,\n                \"price\": \"380.00\",\n                \"createdAt\": \"2020-05-20T03:59:01.000Z\"\n            }\n        ],\n        \"photos\": [\n            {\n                \"photoId\": 11,\n                \"articleId\": 1,\n                \"imagePath\": \"2020520-4377511355-amd-ryzen-7-2700x-box.jpg\"\n            },\n            {\n                \"photoId\": 13,\n                \"articleId\": 1,\n                \"imagePath\": \"2020520-6331126454-amd-ryzen-7-2700x-box.jpg\"\n            }\n        ]\n    },\n    {\n        \"articleId\": 8,\n        \"name\": \"Intel i51\",\n        \"categoryId\": 3,\n        \"excerpt\": \"New processor excerpt\",\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\n        \"manufacturer\": \"Intel\",\n        \"category\": {\n            \"categoryId\": 3,\n            \"name\": \"Procesori\",\n            \"imagePath\": \"2020622-9020415786-amd-ryzen-7-2700x-box.jpg\",\n            \"parentCategoryId\": 1\n        },\n        \"articleFeatures\": [\n            {\n                \"artivleFeatureId\": 13,\n                \"articleId\": 8,\n                \"featureId\": 3,\n                \"value\": \"x64\"\n            },\n            {\n                \"artivleFeatureId\": 14,\n                \"articleId\": 8,\n                \"featureId\": 4,\n                \"value\": \"2.5Ghz\"\n            }\n        ],\n        \"features\": [\n            {\n                \"featureId\": 3,\n                \"name\": \"Arhitektura\",\n                \"categoryId\": 3\n            },\n            {\n                \"featureId\": 4,\n                \"name\": \"Clock speed\",\n                \"categoryId\": 3\n            }\n        ],\n        \"articlePrices\": [\n            {\n                \"articlePriceId\": 7,\n                \"articleId\": 8,\n                \"price\": \"350.00\",\n                \"createdAt\": \"2020-06-22T00:13:54.000Z\"\n            },\n            {\n                \"articlePriceId\": 8,\n                \"articleId\": 8,\n                \"price\": \"450.00\",\n                \"createdAt\": \"2020-06-22T00:48:26.000Z\"\n            }\n        ],\n        \"photos\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Delete article",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/article/delete/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"article",
+								"delete",
+								"16"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbmlzdHJhdG9ySWQiOjE1LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjAxNDgzOTA1LjY3NSwiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjYuNSIsImlhdCI6MTYwMDI3NDMwNX0.q6M5dCh1UJKZy_SYr2a4npn6A3VUyporY80pkPqJoaQ",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4415dc02-1a5a-46e9-b93c-bf075b38f362",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae62852c-3653-4ebc-8fa1-52b80a0f5e57",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "administrator login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"adminPass\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "administrator login when nonexistant username",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"admin1\",\n\t\"password\": \"admin\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-KIt0aAQZ2LbdQf2ETAOGG4pfU9Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 08:11:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1003,\n    \"message\": null\n}"
+						},
+						{
+							"name": "administrator login when bad password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"admin1\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-ZiWt0Of65EywEZ8Ao98nXcWQPOE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 08:10:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1004,\n    \"message\": null\n}"
+						},
+						{
+							"name": "successful administrator login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"admin\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "292"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"124-BxJIRjFljN/dNZdEdnYA35ZnipA\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2020 08:07:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 15,\n    \"username\": \"admin\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbmlzdHJhdG9ySWQiOjE1LCJ1c2VybmFtZSI6ImFkbWluIiwiZXh0IjoxNTkwNTY2ODY3LjA3NSwiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjQuMSIsImlhdCI6MTU4OTk2MjA2N30.8NkyikS4STuuhYWkJldEC2EQkh6aN9YpvLrZFbjIk0w\"\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "66c60582-7d6a-4091-aa27-69a271bce777",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "72b124ae-8c0b-4ae6-a45b-357ee8ac1743",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Feature",
+			"item": [
+				{
+					"name": "Get all features",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/feature/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"feature",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all features",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"type": "text",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/feature",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"feature"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "574"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23e-m81nzksz3SXCwIyA6hvw3OgalIY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Jun 2020 23:16:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"featureId\": 1,\n        \"name\": \"Nacin povezivanja\",\n        \"categoryId\": 2,\n        \"category\": {\n            \"categoryId\": 2,\n            \"name\": \"Graficke karte\",\n            \"imagePath\": \"/img3\",\n            \"parentCategoryId\": 1\n        }\n    },\n    {\n        \"featureId\": 2,\n        \"name\": \"Baterija\",\n        \"categoryId\": 2,\n        \"category\": {\n            \"categoryId\": 2,\n            \"name\": \"Graficke karte\",\n            \"imagePath\": \"/img3\",\n            \"parentCategoryId\": 1\n        }\n    },\n    {\n        \"featureId\": 3,\n        \"name\": \"Arhitektura\",\n        \"categoryId\": 3,\n        \"category\": {\n            \"categoryId\": 3,\n            \"name\": \"Procesori\",\n            \"imagePath\": \"/img1\",\n            \"parentCategoryId\": 1\n        }\n    },\n    {\n        \"featureId\": 4,\n        \"name\": \"Clock speed\",\n        \"categoryId\": 3,\n        \"category\": {\n            \"categoryId\": 3,\n            \"name\": \"Procesori\",\n            \"imagePath\": \"/img1\",\n            \"parentCategoryId\": 1\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get one feature",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/feature/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"feature",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get one feature",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"type": "text",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/api/feature/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"feature",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "139"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8b-RNiJVhcqMT+FXw+JFohUEep5Kos\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Jun 2020 23:18:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"featureId\": 3,\n    \"name\": \"Arhitektura\",\n    \"categoryId\": 3,\n    \"category\": {\n        \"categoryId\": 3,\n        \"name\": \"Procesori\",\n        \"imagePath\": \"/img1\",\n        \"parentCategoryId\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Add feature",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"220v\",\r\n\"categoryId\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/feature",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"feature"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add feature",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"name\": \"Pasivno hladjenje\",\r\n\"categoryId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/feature",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"feature"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-BDr5hoMMv0JFxjjk+fmVZ9pnz6c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Jun 2020 23:21:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"featureId\": 5,\n    \"name\": \"Pasivno hladjenje\",\n    \"categoryId\": 2,\n    \"category\": {\n        \"categoryId\": 2,\n        \"name\": \"Graficke karte\",\n        \"imagePath\": \"/img3\",\n        \"parentCategoryId\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit feature",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Vrsta baterije\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/feature/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"feature",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit feature",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"name\": \"Vrsta baterije\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/feature/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"feature",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "147"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"93-WoLUTXwZ57pnzftU4bEMJwqZSxc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Jun 2020 23:28:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"featureId\": 2,\n    \"name\": \"Vrsta baterije\",\n    \"categoryId\": 2,\n    \"category\": {\n        \"categoryId\": 2,\n        \"name\": \"Graficke karte\",\n        \"imagePath\": \"/img3\",\n        \"parentCategoryId\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete feature",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/feature/delete/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"feature",
+								"delete",
+								"16"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "dfdc9133-c434-4ff2-b538-a8fefec0d894",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "b898da29-7945-426b-a231-99f332e878c3",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1168"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"490-nHFjlpHDDkFgEzW/RpdrC0iOmJE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 Jun 2020 20:15:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"categoryId\": 1,\n        \"name\": \"Racunarske Komponente\",\n        \"imagePath\": \"/img6\",\n        \"parentCategoryId\": null,\n        \"categories\": [\n            {\n                \"categoryId\": 2,\n                \"name\": \"Graficke karte\",\n                \"imagePath\": \"/img3\",\n                \"parentCategoryId\": 1\n            },\n            {\n                \"categoryId\": 3,\n                \"name\": \"Procesori\",\n                \"imagePath\": \"2020622-9020415786-amd-ryzen-7-2700x-box.jpg\",\n                \"parentCategoryId\": 1\n            }\n        ],\n        \"parentCategory\": null\n    },\n    {\n        \"categoryId\": 2,\n        \"name\": \"Graficke karte\",\n        \"imagePath\": \"/img3\",\n        \"parentCategoryId\": 1,\n        \"categories\": [],\n        \"parentCategory\": {\n            \"categoryId\": 1,\n            \"name\": \"Racunarske Komponente\",\n            \"imagePath\": \"/img6\",\n            \"parentCategoryId\": null\n        }\n    },\n    {\n        \"categoryId\": 3,\n        \"name\": \"Procesori\",\n        \"imagePath\": \"2020622-9020415786-amd-ryzen-7-2700x-box.jpg\",\n        \"parentCategoryId\": 1,\n        \"categories\": [],\n        \"parentCategory\": {\n            \"categoryId\": 1,\n            \"name\": \"Racunarske Komponente\",\n            \"imagePath\": \"/img6\",\n            \"parentCategoryId\": null\n        }\n    },\n    {\n        \"categoryId\": 4,\n        \"name\": \"Kucni Aparati\",\n        \"imagePath\": \"/img2\",\n        \"parentCategoryId\": null,\n        \"categories\": [\n            {\n                \"categoryId\": 5,\n                \"name\": \"Usisivaci\",\n                \"imagePath\": \"/img4\",\n                \"parentCategoryId\": 4\n            }\n        ],\n        \"parentCategory\": null\n    },\n    {\n        \"categoryId\": 5,\n        \"name\": \"Usisivaci\",\n        \"imagePath\": \"/img4\",\n        \"parentCategoryId\": 4,\n        \"categories\": [],\n        \"parentCategory\": {\n            \"categoryId\": 4,\n            \"name\": \"Kucni Aparati\",\n            \"imagePath\": \"/img2\",\n            \"parentCategoryId\": null\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "add category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Frizider\",\r\n    \"parentCategoryId\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Mobilni telefoni\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "99"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"63-dGU+2pQeP6JRb37i3CEs6wFe2pQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 23 Jun 2020 05:33:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoryId\": 8,\n    \"name\": \"Mobilni telefoni\",\n    \"imagePath\": null,\n    \"parentCategoryId\": null,\n    \"categories\": []\n}"
+						},
+						{
+							"name": "add category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Frizider\",\r\n    \"parentCategoryId\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "88"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"58-G0JdnyxW2XJWQtJB22D5LrHfBsg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 23 Jun 2020 05:51:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoryId\": 9,\n    \"name\": \"Frizider\",\n    \"imagePath\": null,\n    \"parentCategoryId\": 4,\n    \"categories\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Add category photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/Thrax/Desktop/smartphone-9-min.png"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/category/8/uploadPhoto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"category",
+								"8",
+								"uploadPhoto"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add category photo",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/Thrax/Desktop/smartphone-9-min.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/category/8/uploadPhoto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"category",
+										"8",
+										"uploadPhoto"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-gYtILvr0kz9DORhURpzRmhdmups\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 23 Jun 2020 05:38:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categoryId\": 8,\n    \"name\": \"Mobilni telefoni\",\n    \"imagePath\": \"2020623-7542258891-smartphone-9-min.png\",\n    \"parentCategoryId\": null,\n    \"categories\": [],\n    \"features\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/category/delete/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"category",
+								"delete",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbmlzdHJhdG9ySWQiOjE1LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjAxNDg2MjUzLjYyOSwiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjYuNSIsImlhdCI6MTYwMDI3NjY1M30.c5Li9tVgEpWE9FBOA4dxL76BcJLrwOCvFQ3Xn_AuCfk",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "be3a4b49-89eb-4d58-9baa-f62699534b63",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "bd2d63dd-a678-4921-8abe-3c77976a9bb7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbmlzdHJhdG9ySWQiOjE1LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjAxNDgzOTA1LjY3NSwiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjYuNSIsImlhdCI6MTYwMDI3NDMwNX0.q6M5dCh1UJKZy_SYr2a4npn6A3VUyporY80pkPqJoaQ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1f5d4a5d-8b38-4f35-b30f-9d8dafd31645",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "859553c0-6dc5-4d67-bb73-a4fdb4c0804d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
